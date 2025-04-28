@@ -77,23 +77,23 @@ The application includes several examples of acoustic spaces with pre-defined pa
  
 
 
-#### Audio Plugin 
+### Audio Plugin 
 
-Prerequisites:
-CMake: Minimum version 3.5.
-JUCE: Clone or download JUCE and note its path.
-Compiler: A C++17-compatible compiler (Visual Studio 2019+, Xcode 11+, GCC 9+, or Clang 10+).
+**Prerequisites:**
+- **CMake:** Minimum version 3.5.
+- **JUCE:** Clone or download JUCE and note its path.
+- **Compiler:** A C++17-compatible compiler (Visual Studio 2019+, Xcode 11+, GCC 9+, or Clang 10+).
 
 Setup:
 Clone the repo and get JUCE:
-    mkdir build && cd build
-    cmake -G "<Your IDE>" -DJUCE_PATH=../JUCE ..
-    cmake --build . --config Release
+   - mkdir build && cd build
+   - cmake -G "<Your IDE>" -DJUCE_PATH=../JUCE ..
+   - cmake --build . --config Release
 
 JUCE_PATH should point to the top-level JUCE folder.
 The plugin will be output in the default VST3/AU folders (set by COPY_PLUGIN_AFTER_BUILD).
 
-Plugin Parameters:
+**Plugin Parameters:**
     Input Gain: Scales incoming signal
     Dry/Wet: Mix between dry and wet
     Output Gain: Final output level
