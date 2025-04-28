@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
-project(Ir_Generator VERSION 0.0.1)
+project(conv-reverb VERSION 0.0.1)
 
 add_subdirectory("C:/Users/mikez/Desktop/JUCE" JUCE)
 
-juce_add_plugin(Ir_Generator
+juce_add_plugin(conv-reverb
     # VERSION ...                               # Set this if the plugin version is different to the project version
     # ICON_BIG ...                              # ICON_* arguments specify a path to an image file to use as an icon for the Standalone
     # ICON_SMALL ...
@@ -20,17 +20,17 @@ juce_add_plugin(Ir_Generator
     PLUGIN_CODE irmA                            # A unique four-character plugin id with exactly one upper-case character
                                                 # GarageBand 10.3 requires the first letter to be upper-case, and the remaining letters to be lower-case
     FORMATS AU VST3 Standalone                  # The formats to build. Other valid formats are: AAX Unity VST AU AUv3
-    PRODUCT_NAME "IR Generator")        # The name of the final executable, which can differ from the target name
+    PRODUCT_NAME "Convolution Reverb")        # The name of the final executable, which can differ from the target name
 
-juce_generate_juce_header(Ir_Generator)
+juce_generate_juce_header(conv-reverb)
 
-target_sources(Ir_Generator
+target_sources(conv-reverb
     PRIVATE
     src/PluginEditor.cpp
     src/PluginProcessor.cpp)
 
 
-target_compile_definitions(Ir_Generator
+target_compile_definitions(conv-reverb
     PUBLIC #
         JUCE_ALSA=1
         JUCE_DIRECTSOUND=1
@@ -45,7 +45,7 @@ target_compile_definitions(Ir_Generator
         JUCE_USE_CURL=0     # If you remove this, add `NEEDS_CURL TRUE` to the `juce_add_plugin` call
         JUCE_VST3_CAN_REPLACE_VST2=0)
 
-target_link_libraries(Ir_Generator
+target_link_libraries(conv-reverb
     PRIVATE
         # AudioPluginData           # If we'd created a binary data target, we'd link to it here
         juce::juce_audio_utils

@@ -70,7 +70,13 @@ void TestPluginAudioProcessor::loadImpulseResponseByID(int irID)
         impulseFile = juce::File("C:\\Users\\mikez\\Desktop\\Ai-Builds\\ir-generator\\impulseResponses\\IR3.wav");
         break;
     case 4:
-        impulseFile = juce::File("C:\\Users\\mikez\\Desktop\\Ai-Builds\\ir-generator\\impulseResponses\\ir.wav");
+        impulseFile = juce::File("C:\\Users\\mikez\\Desktop\\Ai-Builds\\ir-generator\\impulseResponses\\IR4.wav");
+		break;
+    case 5:
+        impulseFile = juce::File("C:\\Users\\mikez\\Desktop\\Ai-Builds\\ir-generator\\impulseResponses\\IR5.wav");
+        break;
+    case 6:
+        impulseFile = juce::File("C:\\Users\\mikez\\Desktop\\Ai-Builds\\ir-generator\\impulseResponses\\IR6.wav");
         break;
     default:
         DBG("Unknown IR ID: " << irID);

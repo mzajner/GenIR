@@ -5,11 +5,12 @@ TestPluginAudioProcessorEditor::TestPluginAudioProcessorEditor(TestPluginAudioPr
     : AudioProcessorEditor(&p), audioProcessor(p)
 {
     // Keep existing IR presets in the combo box
-    irCombo.addItem("IR1 - Big Hall", 1);
-    irCombo.addItem("IR2 - Plate", 2);
-    irCombo.addItem("IR3 - Tiny Room", 3);
-    irCombo.addItem("IR4 - Cave", 4);
-    irCombo.addItem("Custom IR", 5); // Add a custom option
+    irCombo.addItem("dark muffled dry hole narrow small very-reverberant", 1);
+    irCombo.addItem("dark muffled dry hole narrow small", 2);
+    irCombo.addItem("outside mountain trees rocks echo", 3);
+    irCombo.addItem("outside tunnel courtyard park echo", 4);
+    irCombo.addItem("small dry studio wooden floor", 5);
+    irCombo.addItem("very-reverberant very-high very-large glass", 6);
     irCombo.addListener(this);
     addAndMakeVisible(irCombo);
 
