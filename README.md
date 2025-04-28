@@ -4,8 +4,7 @@
 
 GenIR is an application that uses machine lerning to generate simulated spaces from text descriptions. The application remotly creates Impulse Responses (IRs) that are immediately processed by an integrated convolution algorithm, allowing you to instantly simulate acoustic environments such as churches, studios, tunnels, caves, and much more. Since the generation is made on a distant server, you have to be connected to Internet in order to use it.
 
-
-(genir-img.png)
+![gen-img]{genir-img.png}
 
 ### Basic Usage
 
