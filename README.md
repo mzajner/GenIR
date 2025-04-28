@@ -85,10 +85,9 @@ The application includes several examples of acoustic spaces with pre-defined pa
 - **Compiler:** A C++17-compatible compiler (Visual Studio 2019+, Xcode 11+, GCC 9+, or Clang 10+).
 
 Setup:
-Clone the repo and get JUCE:
-   - mkdir build && cd build
-   - cmake -G "<Your IDE>" -DJUCE_PATH=../JUCE ..
-   - cmake --build . --config Release
+- Clone the repo and get JUCE:
+- Edit CMakeLists to point to JUCE path
+- Run: cmake -G "Visual Studio 17 2022" -S . -B build
 
 JUCE_PATH should point to the top-level JUCE folder.
 The plugin will be output in the default VST3/AU folders (set by COPY_PLUGIN_AFTER_BUILD).
