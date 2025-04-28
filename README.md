@@ -94,10 +94,10 @@ JUCE_PATH should point to the top-level JUCE folder.
 The plugin will be output in the default VST3/AU folders (set by COPY_PLUGIN_AFTER_BUILD).
 
 **Plugin Parameters:**
-    Input Gain: Scales incoming signal
-    Dry/Wet: Mix between dry and wet
-    Output Gain: Final output level
-    Damping Freq: Low-pass cutoff on wet path
+   - Input Gain: Scales incoming signal
+   - Dry/Wet: Mix between dry and wet
+   - Output Gain: Final output level
+   - Damping Freq: Low-pass cutoff on wet path
 
 ###Troubleshooting
 
