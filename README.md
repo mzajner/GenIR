@@ -5,7 +5,7 @@
 GenIR is an application that uses machine lerning to generate simulated spaces from text descriptions. The application remotly creates Impulse Responses (IRs) that are immediately processed by an integrated convolution algorithm, allowing you to instantly simulate acoustic environments such as churches, studios, tunnels, caves, and much more. Since the generation is made on a distant server, you have to be connected to Internet in order to use it.
 
 
-
+(genir-img.png)
 
 ### Basic Usage
 
@@ -74,10 +74,10 @@ The application includes several examples of acoustic spaces with pre-defined pa
 4. **Experiment with Guidance Scale and steps** - Those values are hard to get to grips with, so try differents setups
 
 5. **Use random seeds** - Unless you have a specific reason, always keep random seeds ticked if you wanna get differents results
- 
 
 
-### Audio Plugin 
+
+### Audio Plugin
 
 **Prerequisites:**
 - **CMake:** Minimum version 3.5.
@@ -102,7 +102,7 @@ The plugin will be output in the default VST3/AU folders (set by COPY_PLUGIN_AFT
 
 **Be sure to have a good internet connexion** - The plugin won't work without it
 
- 
+
 
 
 ### Metadata
